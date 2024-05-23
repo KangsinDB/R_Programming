@@ -1,6 +1,4 @@
 
-### R_Programming.md
-
 # R 프로그래밍
 
 ## 소개
