@@ -47,3 +47,40 @@ z <- TRUE      # 논리형
 
 벡터 (Vector)
 벡터는 동일한 데이터 타입의 값들을 일렬로 저장하는 1차원 배열입니다. c() 함수를 사용하여 벡터를 생성합니다.
+
+
+---
+title: "Chapter 20 높은 수준의 그래프 함수"
+---
+
+# Chapter 20 높은 수준의 그래프 함수
+
+높은 수준의 그래프 함수 (High Level Graphics facilities) 들을 표로 정리해보면 아래와 같습니다.
+
+## 높은 수준의 그래프 함수
+
+| 그래프 종류 | 높은 수준의 그래프 함수 |
+|-------------|-------------------------|
+| 히스토그램(histogram) | `hist()` |
+| 박스 플롯(box and whisker plot) | `boxplot()` |
+| 줄기 잎 플롯(stem and leaf plot) | `stem()` |
+| 막대 그래프 | `barplot()` |
+| Cleveland Dot Plot | `dotchart()` |
+| 파이 차트 | `pie()` |
+| 산점도 | `plot(x, y)` |
+
+---
+
+## 목차
+
+1. [R과 R Studio](#r과-r-studio)
+2. [R 코딩과 R 패키지](#r-코딩과-r-패키지)
+3. [R 마크다운](#r-마크다운)
+4. [변수와 데이터 타입](#변수와-데이터-타입)
+5. [벡터(vector)](#벡터vector)
+6. [요인(factor)](#요인factor)
+7. [행렬(matrix)](#행렬matrix)
+8. [배열(array)](#배열array)
+9. [리스트(list)](#리스트list)
+10. [데이터 프레임](#데이터-프레임)
+
