@@ -25,8 +25,58 @@
     <main class="content">
         <h1>R Programming</h1>
         <p>Junho Kang, Keimyung Universiry</p>
-        <h2 id="r과-r-studio">R과 R Studio</h2>
-        <p> R은 통계 계산과 그래픽을 위한 무료 소프트웨어 환경입니다. 뉴질랜드의 통계학자 로스 이하카(Ross Ihaka)와 로버트 젠틀맨(Robert Gentleman)이 개발한 R은 현재 R 재단에 의해 유지 관리되고 있으며, 오픈 소스 커뮤니티의 기여로 꾸준히 발전하고 있습니다.</p>
+        <section id="r과-r-studio">
+            <h2>R과 R Studio</h2>
+            <h1>R 프로그래밍</h1>
+
+            <h2>소개</h2>
+            <p>R은 통계 계산과 그래픽을 위한 무료 소프트웨어 환경입니다. 뉴질랜드의 통계학자 로스 이하카(Ross Ihaka)와 로버트 젠틀맨(Robert Gentleman)이 개발한 R은 현재 R 재단에 의해 유지 관리되고 있으며, 오픈 소스 커뮤니티의 기여로 꾸준히 발전하고 있습니다.</p>
+
+            <h2>특징</h2>
+            <p>R은 강력한 데이터 분석 도구로서 다음과 같은 주요 특징을 가지고 있습니다:</p>
+            <ul>
+                <li><strong>통계 분석 기능</strong>: R은 다양한 통계 모델링 기법을 지원합니다. 선형 및 비선형 모델, 시계열 분석, 분류 및 클러스터링 등 다양한 통계 분석을 수행할 수 있습니다.</li>
+                <li><strong>그래픽 기능</strong>: 고품질의 데이터 시각화를 지원합니다. 기본 그래픽 시스템 외에도 <code>ggplot2</code>와 같은 패키지를 통해 더욱 정교한 그래픽을 생성할 수 있습니다.</li>
+                <li><strong>확장성</strong>: CRAN (Comprehensive R Archive Network)을 통해 수천 개의 패키지를 제공하여, 다양한 분석 작업을 지원합니다.</li>
+                <li><strong>오픈 소스</strong>: R은 무료로 사용할 수 있으며, 누구나 소스 코드를 열람하고 수정할 수 있습니다.</li>
+                <li><strong>커뮤니티 지원</strong>: 방대한 사용자 커뮤니티와 활발한 개발자 그룹이 존재하여, 다양한 온라인 자료와 포럼을 통해 지원을 받을 수 있습니다.</li>
+            </ul>
+
+            <h2>주요 용도</h2>
+            <p>R은 다양한 분야에서 데이터 분석과 시각화를 위해 사용됩니다:</p>
+            <ul>
+                <li><strong>학계 및 연구</strong>: 데이터 분석과 통계 모델링을 통한 연구 결과 도출.</li>
+                <li><strong>금융</strong>: 리스크 관리, 포트폴리오 최적화, 가격 모델링 등.</li>
+                <li><strong>생물정보학</strong>: 생물정보학은 유전자 및 단백질 서열 데이터를 분석하여 생물학적 문제를 해결하는 학문입니다. R은 BioConductor와 같은 강력한 패키지 모음을 제공하여, 유전자 발현 분석, 서열 정렬, 유전체 데이터 시각화 등을 지원합니다. 예를 들어, 다음과 같은 작업을 수행할 수 있습니다:</li>
+                <ul>
+                    <li><strong>유전자 발현 분석</strong>: RNA-Seq 데이터를 사용하여 차등 유전자 발현을 분석합니다.</li>
+                    <li><strong>서열 정렬</strong>: 유전자 서열 데이터를 정렬하고 비교합니다.</li>
+                    <li><strong>단백질 구조 예측</strong>: 단백질의 3D 구조를 예측하고 시각화합니다.</li>
+                    <li><strong>유전체 데이터 시각화</strong>: 유전체 데이터를 다양한 형식으로 시각화하여 이해를 돕습니다.</li>
+                </ul>
+                <li><strong>마케팅</strong>: 고객 분석, 시장 조사, 캠페인 효과 분석.</li>
+                <li><strong>공공 정책</strong>: 인구 통계 분석, 정책 평가, 사회 경제 데이터 분석.</li>
+            </ul>
+
+            <h2>시작하기</h2>
+            <p>R을 시작하려면 먼저 R과 RStudio(권장)를 설치해야 합니다. RStudio는 R을 사용하는데 편리한 통합 개발 환경(IDE)입니다.</p>
+            <ol>
+                <li><strong>R 설치</strong>: <a href="https://cran.r-project.org/mirrors.html">CRAN</a> 사이트에서 운영체제에 맞는 R 설치 파일을 다운로드하고 설치합니다.</li>
+                <li><strong>RStudio 설치</strong>: <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a> 사이트에서 무료 버전을 다운로드하여 설치합니다.</li>
+            </ol>
+            <p>설치가 완료되면 RStudio를 열고, R 스크립트를 작성하여 실행할 수 있습니다.</p>
+
+            <h2>데이터 타입 (Data Types)</h2>
+            <p>R에서 사용되는 주요 데이터 타입에는 숫자형(numeric), 문자형(character), 논리형(logical) 등이 있습니다.</p>
+            <pre><code>x <- 10        # 숫자형
+y <- "Hello"   # 문자형
+z <- TRUE      # 논리형</code></pre>
+
+            <h2>벡터 (Vector)</h2>
+            <p>벡터는 동일한 데이터 타입의 값들을 일렬로 저장하는 1차원 배열입니다. c() 함수를 사용하여 벡터를 생성합니다.</p>
+        </section>
+        
+        
         <h2 id="r-코딩과-r-패키지">R 코딩과 R 패키지</h2>
         <p>R 코딩과 R 패키지에 대한 설명...</p>
         <h2 id="r-마크다운">R 마크다운</h2>
