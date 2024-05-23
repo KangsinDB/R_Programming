@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+nav#table-of-contents {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ddd;
+}
+
+main.content {
+    margin-left: 22%;
+    padding: 20px;
+    width: 78%;
+}
+
+a {
+    color: green;
+}
